@@ -39,7 +39,7 @@ const EditTaskPopup = ({modal, toggle, updateTask, taskObj}) => {
             }
         }
 
-        await axios.patch('tasks/update', { data }, axiosConfig)
+        await axios.patch('https://taskmanagement-5dws.onrender.com/tasks/update', { data }, axiosConfig)
             .then((data) => {
                 alert('task Updated');
                 window.location.reload();

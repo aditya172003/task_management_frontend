@@ -21,13 +21,10 @@ function AddTask({ modal, toggle }) {
             //   lng:JSON.stringify(lgn),
             //   ltd:JSON.stringify(lgt)
             // },
-            headers: {
-                'Content-Type': "application/json",
-                "Access-Control-Allow-Origin": "*",
-            }
+         
         }
 
-        await axios.post('tasks/addTask', { data }, axiosConfig)
+        await axios.post('https://taskmanagement-5dws.onrender.com/tasks/addTask', { data }, axiosConfig)
             .then((data) => {
                alert("task added")
               
