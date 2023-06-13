@@ -12,7 +12,7 @@ function TaskList() {
 
     const getTask = async()=>{
     
-        await axios.get('/tasks/todays')
+        await axios.get('https://taskmanagement-5dws.onrender.com/tasks/todays')
         .then((data)=>{
             
             const task = data.data;

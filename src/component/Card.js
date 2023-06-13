@@ -48,7 +48,7 @@ const Card = ({taskObj, index}) => {
      
     }
 
-    await axios.delete('tasks/deleteTask', axiosConfig)
+    await axios.delete('https://taskmanagement-5dws.onrender.com/tasks/deleteTask', axiosConfig)
         .then((data) => {
             window.location.reload();
             alert("task deleted");
